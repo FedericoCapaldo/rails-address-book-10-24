@@ -107,6 +107,8 @@ GEM
       railties (>= 6.1)
     erubi (1.13.0)
     execjs (2.9.1)
+    faker (3.4.2)
+      i18n (>= 1.8.11, < 2)
     ffi (1.17.0)
     font-awesome-sass (6.5.2)
       sassc (~> 2.0)
@@ -122,9 +124,6 @@ GEM
     irb (1.14.1)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
-    jbuilder (2.13.0)
-      actionview (>= 5.0.0)
-      activesupport (>= 5.0.0)
     logger (1.6.1)
     loofah (2.22.0)
       crass (~> 1.0.2)
@@ -257,9 +256,9 @@ DEPENDENCIES
   capybara
   debug
   dotenv-rails
+  faker
   font-awesome-sass (~> 6.1)
   importmap-rails
-  jbuilder
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.8, >= 7.0.8.4)
