@@ -1,10 +1,17 @@
-<p style="color: green"><%= notice %></p>
+<div class="contact-grid">
 
-<%= render @contact %>
+  <%= render 'contacts/list', contacts: @contacts %>
 
-<div>
-  <%= link_to "Edit this contact", edit_contact_path(@contact) %> |
-  <%= link_to "Back to contacts", contacts_path %>
+  <div>
+    <p style="color: green"><%= notice %></p>
 
-  <%= button_to "Destroy this contact", @contact, method: :delete %>
+    <%= render @contact %>
+
+    <div>
+      <%= link_to "Edit this contact", edit_contact_path(@contact) %> |
+      <%= link_to "Back to contacts", contacts_path %>
+
+      <%= button_to "Destroy this contact", @contact, method: :delete %>
+    </div>
+  </div>
 </div>
