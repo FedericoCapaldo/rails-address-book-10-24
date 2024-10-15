@@ -7,4 +7,11 @@ export default class extends Controller {
   connect() {
     console.log(this.contactTargets)
   }
+
+  highlight(event) {
+    this.contactTargets.forEach((contact) => {
+      contact.classList.remove('active')
+    })
+    event.currentTarget.classList.add('active')
+  }
 }
